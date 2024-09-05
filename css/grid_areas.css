@@ -1,0 +1,53 @@
+main section:nth-child(2n) {
+  background-color: turquoise;
+}
+
+main section:nth-child(2n+1) {
+  background-color: lightpink;
+}
+
+/* Grid: AREAS */
+main {
+  display: grid;
+  row-gap: 0.5rem;
+  column-gap: 0.5rem;
+  grid-template-areas: 
+    "A A A A A A"
+    "B B B Q Q Q"
+    "D D E E F F"
+    "M M M T T T";
+}
+
+main section#datosgenerales {
+  grid-area: A;
+}
+
+main section#habilidadespersonales {
+  grid-area: B;
+}
+
+main section#conocimientos {
+  grid-area: Q;
+}
+
+main section#trabajosanteriores {
+  grid-area: D;
+}
+
+main section#habilidadesprogramacion {
+  grid-area: E;
+}
+
+main section#proyectosanteriores {
+  grid-area: F;
+}
+
+main section#idiomas {
+  grid-area: M;
+}
+
+main section#medioscontacto {
+  grid-area: T;
+ }
+
+

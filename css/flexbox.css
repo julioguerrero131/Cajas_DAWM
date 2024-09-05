@@ -1,0 +1,42 @@
+section:nth-child(2n) {
+  background-color: aliceblue;
+}
+
+section:nth-child(2n+1) {
+  background-color: gray;
+}
+
+/* Flexbox */
+main {
+  display: flex;
+  flex-direction: row;
+  row-gap: 0.5rem;
+  column-gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+main section#datosgenerales {
+  flex-basis: 100%;
+  flex-grow: 1;
+}
+
+main section#habilidadespersonales,
+main section#conocimientos {
+  flex-basis: 49%;
+  flex-grow: 1;
+}
+
+main section#trabajosanteriores,
+main section#habilidadesprogramacion,
+main section#proyectosanteriores {
+  flex-basis: 30%;
+  flex-grow: 1;
+}
+
+main section#idiomas,
+main section#medioscontacto {
+  flex-basis: 40%;
+  flex-grow: 1;
+}
